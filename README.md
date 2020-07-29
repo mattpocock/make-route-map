@@ -4,6 +4,8 @@ Routing in web apps can be a subtle, but persistent source of bugs. You think yo
 
 Keep your routes in a single, type-safe source of truth with a routeMap.
 
+We've been using it at [Yozobi](http://yozobi.com/) in production apps for some time now, and it's saved us a lot of headaches.
+
 ## makeRouteMap
 
 ### Simple

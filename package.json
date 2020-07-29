@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,6 +44,7 @@
   "author": "Matt Pocock",
   "module": "dist/make-route-map.esm.js",
   "devDependencies": {
+    "@changesets/cli": "^2.9.2",
     "husky": "^4.2.5",
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
