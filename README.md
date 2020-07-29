@@ -1,6 +1,6 @@
 # make-route-map
 
-Routing in web apps can be a subtle, but persistent source of bugs. You think you've updated every reference to a route you're changing, and *BAM*. You've caused a bug in some unrelated part of your app.
+Routing in web apps can be a subtle, but persistent source of bugs. You think you've updated every reference to a route you're changing, and _BAM_. You've caused a bug in some unrelated part of your app.
 
 Keep your routes in a single, type-safe source of truth with a routeMap.
 
@@ -112,7 +112,6 @@ const useNavigate = () => {
 };
 
 const Button = () => {
-  // Use this navigate
   const navigate = useNavigate();
   return <button onClick={navigate.root}>Go Home</button>;
 };
