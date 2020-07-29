@@ -43,6 +43,9 @@
   "name": "make-route-map",
   "author": "Matt Pocock",
   "module": "dist/make-route-map.esm.js",
+  "repository": {
+    "url": "https://github.com/mattpocock/make-route-map"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.9.2",
     "husky": "^4.2.5",

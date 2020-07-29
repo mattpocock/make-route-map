@@ -153,3 +153,34 @@ console.log(
 );
 // '/users/240/edit'
 ```
+
+```js
+import { makeRouteMap } from 'make-route-map';
+
+const routeMap = makeRouteMap({
+  editUser: {
+    path: '/users/:id/edit',
+    params: {
+      id: true,
+    },
+  },
+});
+
+import { makeNavigate } from 'make-route-map';
+import { useHistory } from 'react-router-dom';
+
+const useNavigate = () => {
+  const history = useHistory();
+  const navigate = makeNavigate(routeMap, history.push);
+  return navigate;
+};
+
+const Button = () => {
+  const navigate = useNavigate();
+  return (
+    <button onClick={() => navigate.editUser({ params: { id: '240' } })}>
+      Edit User
+    </button>
+  );
+};
+```
