@@ -3,7 +3,7 @@ export type RoutesType = {
     path: string;
     // Params contained in this path's URL
     params?: {
-      [paramName: string]: true;
+      [paramName: string]: boolean;
     };
     search?: {
       // Is this field required or not?
